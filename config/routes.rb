@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'links#index'
 
+  get "/login" => "sessions#new"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
