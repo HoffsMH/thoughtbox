@@ -1,0 +1,11 @@
+<%= form_for @user, url: register_path, method: :post, html: {class: "signup"} do |f| %>
+
+<%= f.text_field :email, placeholder: "Email*", class: "form-control input-md" %><br>
+
+<%= f.password_field :password, placeholder: "Password*", class: "form-control input-md" %><br>
+
+<%= f.password_field :password_confirmation, placeholder: "Confirm Password*", class: "form-control input-md" %><br><br>
+
+<%= f.submit "Create Account", class: "btn btn-md btn-primary" %>
+
+<% end %>
