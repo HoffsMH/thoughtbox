@@ -17,7 +17,7 @@ RSpec.feature "UserCanSeeLinkForms", type: :feature do
       it "can see a form to make a new idea" do
         expect(current_path).to eq("/")
         expect(page).to have_css("input[name='link[title]']")
-        expect(page).to have_css("input[name='link[link]']")
+        expect(page).to have_css("input[name='link[url]']")
         expect(page).to have_css("input[type='submit']")
       end
     end
