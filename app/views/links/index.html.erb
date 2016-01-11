@@ -2,14 +2,12 @@
 <h1>Links Index Page</h1>
 sup
 
-<%= form_for @link, url: , method: :post, html: {class: "signup"} do |f| %>
+<%= form_for @new_link, url: links_path , method: :post, html: {class: "new-link"} do |f| %>
 
-<%= f.text_field :email, placeholder: "Email*", class: "form-control input-md" %><br>
+<%= f.text_field :title, placeholder: "Title", class: "form-control input-md" %><br>
 
-<%= f.password_field :password, placeholder: "Password*", class: "form-control input-md" %><br>
+<%= f.password_field :link, placeholder: "Link", class: "form-control input-md" %><br>
 
-<%= f.password_field :password_confirmation, placeholder: "Confirm Password*", class: "form-control input-md" %><br><br>
-
-<%= f.submit "Create Account", class: "btn btn-md btn-primary" %>
+<%= f.submit "Submit Link", class: "btn btn-md btn-primary" %>
 
 <% end %>

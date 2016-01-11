@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   root 'links#index'
+  post "/links" => "links#create"
 
   get "/login" => "sessions#new"
   get "/logout" => "sessions#destroy"
   get "/signup" => "users#new"
   post "/signup" => "users#create"
+
 
 
   # Example of regular route:
