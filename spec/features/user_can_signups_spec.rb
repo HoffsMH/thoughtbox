@@ -7,9 +7,10 @@ RSpec.feature "UserCanSignups", type: :feature do
         visit "/login"
       end
       it "can click sign up and be brought to signup page" do
+        save_and_open_page
         click_link_or_button "Sign Up"
 
-        expect(current_path).to.eq("/signup")
+        expect(current_path).to eq("/signup")
       end
     end
   end
