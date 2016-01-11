@@ -9,6 +9,13 @@ Rails.application.routes.draw do
   post "/signup" => "users#create"
 
 
+  namespace :api, defaults: {format: 'json'} do
+    namespace :v1 do
+      resources :links
+    end
+  end
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

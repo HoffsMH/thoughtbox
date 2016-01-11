@@ -1,8 +1,13 @@
-<div>
+<div id='<%= link.id %>' class="read-<%= link.read %> idea">
   Link:
   <ul>
-    <li>TITLE: <%= link.title %></li>
-    <li>URL: <%= link.url %></li>
-    <li>READ: <%= link.read %> <%= link.read ? "mark as unread" : "mark as read" %></li>
+    <li>TITLE: <span class="link-title"><%= link.title %></span></li>
+    <li>URL: <span class="link-url"><%= link.url %></span></li>
+    <li>READ: <span class="link-read"><%= link.read %></span>
+      <% if link.read %>
+       <span class="mark">mark as unread</span>
+     <% else %>
+      <span class="mark">mark as read</span>
+    <% end %></li>
   </ul>
 </div>
