@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "ReadUnreadLinks", type: :feature,  do
+RSpec.feature "ReadUnreadLinks", type: :feature  do
   context "user is already signed in" do
     before(:each) do
       visit "/signup"

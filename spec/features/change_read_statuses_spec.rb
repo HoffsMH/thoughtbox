@@ -22,7 +22,9 @@ RSpec.feature "ChangeReadStatuses", type: :feature do
         end
         it "should be able to change the read status", js: true do
           within(:css, ".idea") do
+            binding.pry
             find('.mark', :text => 'mark as read').click
+            binding.pry
             expect(page).not_to have_content("mark as read")
             expect(page).to have_content("mark as unread")
           end
