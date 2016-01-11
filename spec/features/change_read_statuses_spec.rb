@@ -14,7 +14,7 @@ RSpec.feature "ChangeReadStatuses", type: :feature do
       before(:each) do
         visit "/"
       end
-      context "and there is a linkg" do
+      context "and there is a link" do
         before(:each) do
           fill_in("Title", with: "validtitle")
           fill_in("Link", with: "http://validlink.com")
