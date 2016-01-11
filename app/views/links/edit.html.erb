@@ -1,0 +1,9 @@
+<%= form_for @link, url: link_path(@link.id) , method: :patch do |f| %>
+
+<%= f.text_field :title, placeholder: @link.title, class: "form-control input-md" %><br>
+
+<%= f.text_field :url, placeholder: @link.url, class: "form-control input-md" %><br>
+
+<%= f.submit "Edit Link", class: "btn btn-md btn-primary" %>
+
+<% end %>

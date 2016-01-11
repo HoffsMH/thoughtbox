@@ -1,5 +1,5 @@
 <div id='<%= link.id %>' class="read-<%= link.read %> idea">
-  Link:
+  Link: <span class="edit"><%= link_to "Edit", edit_link_path(link) %></span>
   <ul>
     <li>TITLE: <span class="link-title"><%= link.title %></span></li>
     <li>URL: <span class="link-url"><%= link.url %></span></li>
