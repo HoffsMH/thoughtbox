@@ -39,7 +39,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'launchy'
-  gem 'poltergeist'
+  gem 'selenium-webdriver'
 end
 
 group :development do
