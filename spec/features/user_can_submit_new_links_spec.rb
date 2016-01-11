@@ -19,7 +19,6 @@ RSpec.feature "UserCanSubmitNewLinks", type: :feature do
         fill_in("Title", with: "validtitle")
         fill_in("Link", with: "http://validlink.com")
         click_link_or_button "Submit Link"
-        binding.pry
         expect(page).to have_content("validtitle")
         expect(page).to have_content("http://validlink.com")
 
