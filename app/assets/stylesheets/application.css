@@ -18,6 +18,6 @@
    text-decoration: line-through;
  }
 
-.mark, .edit {
+.mark, .edit, .status-filter, .alpha-filter{
   color: blue;
 }

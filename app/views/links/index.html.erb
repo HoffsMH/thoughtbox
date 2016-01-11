@@ -16,6 +16,10 @@ sup
 
 <hr>
 Search: <input placeholder="search" type="text" class="search">
+Status: <span class="read-filter status-filter">Read</span> ||
+<span class="unread-filter status-filter">Unread</span> ||
+<span class="alpha-filter">Alphabet</span> ||
+<span class="none-filter status-filter">None</span>
 <hr>
 <div class="ideas">
 <%= render partial: "link", collection: @links %>
