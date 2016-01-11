@@ -6,7 +6,7 @@ RSpec.describe LinksController, type: :controller do
       it 'redirects to session#new' do
         get :index
 
-        expect(response).to redirect_to(location)
+        expect(response).to redirect_to("/login")
       end
     end
   end
