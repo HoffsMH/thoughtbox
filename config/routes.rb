@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'links#index'
 
   get "/login" => "sessions#new"
+  get "/signup" => "users#new"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
