@@ -1,6 +1,8 @@
 <%= link_to "Sign Out", logout_path %>
 <h1>Links Index Page</h1>
 sup
+<div class="flash flash-notice"><%= raw(flash.notice) %></div>
+
 
 <%= form_for @new_link, url: links_path , method: :post, html: {class: "new-link"} do |f| %>
 

@@ -10,6 +10,7 @@ class LinksController < ApplicationController
     if link.save
       redirect_to root_path
     else
+      flash.notice = link.errors.full_messages.join(", ")
       redirect_to action: "index"
     end
   end
