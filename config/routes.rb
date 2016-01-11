@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'links#index'
 
   get "/login" => "sessions#new"
+  get "/logout" => "sessions#destroy"
   get "/signup" => "users#new"
   post "/signup" => "users#create"
 
